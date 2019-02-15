@@ -39,7 +39,7 @@ def test_draw_a_picture():
     print('###################################################')
     print('Test 2 of draw_a_picture.')
     print('Called with point2 =', point2)
-    print( 'n =', n, ' color = green')
+    print('n =', n, ' color = green')
     print('###################################################')
     draw_a_picture(point2, n, 'green', test_window)
     test_window.close_on_mouse_click()
@@ -80,7 +80,7 @@ def test_draw_a_picture():
 #   The is_prime function is supplied.  Do NOT change is_prime
 #     """
 ###############################################################################
-# TODO: 1  READ the doc-string for the is_prime function defined below.
+# done: 1  READ the doc-string for the is_prime function defined below.
 # You do NOT need to understand its implementations,
 # just its specification (per the doc-string).
 # You should  ** CALL **  functions as needed in implementing the
@@ -128,8 +128,19 @@ def is_prime(n):
 #
 #
 def draw_a_picture(point, n, color, window):
+    circle = rg.Circle(point, 100)
+    rectangle = rg.Rectangle(rg.Point(70, 110), rg.Point(230 , 190))
+    rectangle.width = 80
+    rectangle.height = 160
+    line_t = rg.Line(rg.Point(70, 110), rg.Point(230, 110))
+    line_t.attach_to(window)
+    circle.attach_to(window)
+    rectangle.attach_to(window)
+    window.render(.5)
 
-    pass
+
+
+
 
 
 main()
