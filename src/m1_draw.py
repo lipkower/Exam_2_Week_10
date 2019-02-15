@@ -153,5 +153,4 @@ def draw_a_picture(point, n, color, window):
 
 
 
-
 main()
