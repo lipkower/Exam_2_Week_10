@@ -141,7 +141,7 @@ def draw_a_picture(point, n, color, window):
             lines.color = color
         else:
             lines.color = 'orange'
-
+        lines.attach_to(window)
 
     line_t.attach_to(window)
     circle.attach_to(window)
